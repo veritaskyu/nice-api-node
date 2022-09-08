@@ -7,11 +7,9 @@ import { DecryptDataError } from '../models/nice-error';
 import { NiceAuthDecryptParameter, NiceOption, NiceAuthRequestParameter, NiceAuthRequestResultData, NiceAuthResponseData } from '../models';
 
 class NiceAuth {
-
   constructor(private _options: NiceOption) {}
 
   generateRequestData = async (niceRequestParameter: Omit<NiceAuthRequestParameter, 'sitecode'>): Promise<NiceAuthRequestResultData> => {
-
     const options = niceRequestParameter as NiceAuthRequestParameter;
 
     const now = new Date();
@@ -62,7 +60,7 @@ class NiceAuth {
         throw new DecryptDataError('integrity validation failed');
       }
 
-      const decryptedBase64Text = niceCrypto.decryptData(key, iv, params.cipherData)
+      const decryptedBase64Text = niceCrypto.decryptData(key, iv, params.cipherData);
       const decodedPlainText = Buffer.from(decryptedBase64Text, 'base64');
       const decodedEucKrText = iconv.decode(decodedPlainText, 'euc-kr');
       const result = niceCrypto.jsonParse(decodedEucKrText);
