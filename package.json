@@ -25,7 +25,9 @@
   "scripts": {
     "test": "mocha test/**/*.spec.ts --require ts-node/register --bail",
     "build": "tsc",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint . --ext .ts",
+    "prepare" : "npm run build",
+    "prepublishOnly": "npm run lint"
   },
   "repository": {
     "type": "git",
