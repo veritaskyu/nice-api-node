@@ -1,0 +1,56 @@
+{
+  "name": "nice-api-node",
+  "version": "0.0.1",
+  "description": "Implementing a Nice API Module for node.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": {
+    "name": "veritasware",
+    "email": "veritasware@gmail.com",
+    "url": "https://github.com/veritaskyu"
+  },
+  "license": "MIT",
+  "keywords": [
+    "nice", "nice-api", "나이스", "나이스API", "본인인증", "본인확인", "나이스본인인증"
+  ],
+  "files": ["dist"],
+  "scripts": {
+    "test": "mocha test/**/*.spec.ts --require ts-node/register --bail",
+    "build": "tsc",
+    "lint": "eslint . --ext .ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/veritaskyu/nice-api-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/veritaskyu/nice-api-node/issues",
+    "email": "veritasware@gmail.com"
+  },
+
+  "dependencies": {
+    "axios": "^0.27.2",
+    "crypto-js": "^4.1.1",
+    "iconv-lite": "^0.6.3",
+    "lodash": "^4.17.21",
+    "node-cache": "^5.1.2",
+    "ts-custom-error": "^3.2.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.3",
+    "@types/crypto-js": "^4.1.1",
+    "@types/lodash": "^4.14.184",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^18.7.15",
+    "@typescript-eslint/eslint-plugin": "^5.36.2",
+    "@typescript-eslint/parser": "^5.36.2",
+    "chai": "^4.3.6",
+    "eslint": "^8.23.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "mocha": "^10.0.0",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.2"
+  }
+}

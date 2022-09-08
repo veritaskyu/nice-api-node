@@ -1,0 +1,14 @@
+node_modules/
+.idea/
+.git/
+test/
+src/
+doc/
+
+*.iml
+.idea
+.eslintrc.json
+.npmignore
+.prettierignore
+.prettierrc
+tsconfig.json
