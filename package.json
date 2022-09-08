@@ -1,6 +1,6 @@
 {
   "name": "nice-api-node",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Implementing a Nice API Module for node.js",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,9 +11,17 @@
   },
   "license": "MIT",
   "keywords": [
-    "nice", "nice-api", "나이스", "나이스API", "본인인증", "본인확인", "나이스본인인증"
+    "nice",
+    "nice-api",
+    "나이스",
+    "나이스API",
+    "본인인증",
+    "본인확인",
+    "나이스본인인증"
   ],
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "mocha test/**/*.spec.ts --require ts-node/register --bail",
     "build": "tsc",
@@ -27,7 +35,6 @@
     "url": "https://github.com/veritaskyu/nice-api-node/issues",
     "email": "veritasware@gmail.com"
   },
-
   "dependencies": {
     "axios": "^0.27.2",
     "crypto-js": "^4.1.1",
