@@ -1,6 +1,6 @@
 {
   "name": "nice-api-node",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Implementing a Nice API Module for node.js",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
